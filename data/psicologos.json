@@ -1,0 +1,5 @@
+[
+    { "nombre": "Dr. Juan Pérez", "imagen": "/images/juan-perez.jpg" },
+    { "nombre": "Dra. María García", "imagen": "/images/maria-garcia.jpg" },
+    { "nombre": "Dr. Carlos López", "imagen": "/images/carlos-lopez.jpg" }
+  ]

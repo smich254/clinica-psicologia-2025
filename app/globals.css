@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* Estilos base */
+@layer base {
+  html {
+    @apply scroll-smooth; /* Desplazamiento suave para anclas */
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  body {
+    @apply bg-psych-gray-light text-psych-gray-dark font-sans leading-relaxed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-psych-blue-dark font-bold;
+  }
+
+  a {
+    @apply text-psych-blue hover:text-psych-blue-dark transition-colors duration-200;
+  }
+
+  button {
+    @apply bg-psych-blue text-white px-4 py-2 rounded-md hover:bg-psych-blue-dark transition-colors duration-200;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Clases reutilizables */
+@layer components {
+  .section-container {
+    @apply container mx-auto px-4 py-12;
+  }
+
+  .card {
+    @apply bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-psych-blue-light text-psych-blue-dark px-4 py-2 rounded-md hover:bg-psych-blue hover:text-white transition-colors duration-300;
+  }
+}
+
+/* Estilos específicos para secciones */
+header {
+  @apply bg-white shadow-md fixed top-0 w-full z-10;
+}
+
+footer {
+  @apply bg-psych-blue-dark text-white py-6;
 }
