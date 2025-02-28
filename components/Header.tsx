@@ -1,3 +1,5 @@
+"use client"; // Añade esta línea al inicio
+
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { useState } from "react";
