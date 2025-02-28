@@ -1,4 +1,4 @@
-"use client"; // Añade esta línea al inicio
+"use client";
 
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
@@ -23,7 +23,7 @@ const Header = () => {
 
         {/* Botón Hamburguesa (visible solo en móvil) */}
         <button
-          className="md:hidden text-psych-gray-dark focus:outline-none"
+          className="md:hidden text-psych-gray-dark p-2 rounded-full hover:bg-psych-blue-light hover:text-psych-blue transition-all duration-200 focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -37,7 +37,7 @@ const Header = () => {
               <li>
                 <Link
                   href="#servicios"
-                  className="hover:text-psych-blue transition-colors duration-200"
+                  className="px-3 py-1 text-sm font-medium uppercase tracking-wide hover:text-psych-blue hover:bg-psych-blue-light rounded-md transition-all duration-200"
                 >
                   Servicios
                 </Link>
@@ -45,7 +45,7 @@ const Header = () => {
               <li>
                 <Link
                   href="#sobre-nosotros"
-                  className="hover:text-psych-blue transition-colors duration-200"
+                  className="px-3 py-1 text-sm font-medium uppercase tracking-wide hover:text-psych-blue hover:bg-psych-blue-light rounded-md transition-all duration-200"
                 >
                   Sobre nosotros
                 </Link>
@@ -53,7 +53,7 @@ const Header = () => {
               <li>
                 <Link
                   href="#reseñas"
-                  className="hover:text-psych-blue transition-colors duration-200"
+                  className="px-3 py-1 text-sm font-medium uppercase tracking-wide hover:text-psych-blue hover:bg-psych-blue-light rounded-md transition-all duration-200"
                 >
                   Reseñas
                 </Link>
@@ -61,7 +61,7 @@ const Header = () => {
               <li>
                 <Link
                   href="#contactos"
-                  className="hover:text-psych-blue transition-colors duration-200"
+                  className="px-3 py-1 text-sm font-medium uppercase tracking-wide hover:text-psych-blue hover:bg-psych-blue-light rounded-md transition-all duration-200"
                 >
                   Contactos
                 </Link>
@@ -73,7 +73,7 @@ const Header = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-psych-blue transition-colors duration-200"
+              className="p-1 hover:text-psych-blue hover:bg-psych-blue-light rounded-full transition-all duration-200"
             >
               <FaFacebook size={24} />
             </a>
@@ -81,7 +81,7 @@ const Header = () => {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-psych-blue transition-colors duration-200"
+              className="p-1 hover:text-psych-blue hover:bg-psych-blue-light rounded-full transition-all duration-200"
             >
               <FaTwitter size={24} />
             </a>
@@ -89,7 +89,7 @@ const Header = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-psych-blue transition-colors duration-200"
+              className="p-1 hover:text-psych-blue hover:bg-psych-blue-light rounded-full transition-all duration-200"
             >
               <FaLinkedin size={24} />
             </a>
@@ -97,7 +97,7 @@ const Header = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-psych-blue transition-colors duration-200"
+              className="p-1 hover:text-psych-blue hover:bg-psych-blue-light rounded-full transition-all duration-200"
             >
               <FaInstagram size={24} />
             </a>
@@ -112,7 +112,7 @@ const Header = () => {
         >
           <div className="flex justify-end p-4">
             <button
-              className="text-psych-gray-dark focus:outline-none"
+              className="text-psych-gray-dark p-2 rounded-full hover:bg-psych-blue-light hover:text-psych-blue transition-all duration-200 focus:outline-none"
               onClick={toggleMenu}
               aria-label="Close menu"
             >
@@ -122,28 +122,28 @@ const Header = () => {
           <nav className="flex flex-col items-center space-y-6 mt-10">
             <Link
               href="#servicios"
-              className="text-psych-gray-dark text-lg hover:text-psych-blue transition-colors duration-200"
+              className="text-psych-gray-dark text-lg font-medium hover:text-psych-blue hover:bg-psych-blue-light px-4 py-2 rounded-md transition-all duration-200"
               onClick={toggleMenu}
             >
               Servicios
             </Link>
             <Link
               href="#sobre-nosotros"
-              className="text-psych-gray-dark text-lg hover:text-psych-blue transition-colors duration-200"
+              className="text-psych-gray-dark text-lg font-medium hover:text-psych-blue hover:bg-psych-blue-light px-4 py-2 rounded-md transition-all duration-200"
               onClick={toggleMenu}
             >
               Sobre nosotros
             </Link>
             <Link
               href="#reseñas"
-              className="text-psych-gray-dark text-lg hover:text-psych-blue transition-colors duration-200"
+              className="text-psych-gray-dark text-lg font-medium hover:text-psych-blue hover:bg-psych-blue-light px-4 py-2 rounded-md transition-all duration-200"
               onClick={toggleMenu}
             >
               Reseñas
             </Link>
             <Link
               href="#contactos"
-              className="text-psych-gray-dark text-lg hover:text-psych-blue transition-colors duration-200"
+              className="text-psych-gray-dark text-lg font-medium hover:text-psych-blue hover:bg-psych-blue-light px-4 py-2 rounded-md transition-all duration-200"
               onClick={toggleMenu}
             >
               Contactos
@@ -153,7 +153,7 @@ const Header = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-psych-blue transition-colors duration-200"
+                className="p-2 hover:text-psych-blue hover:bg-psych-blue-light rounded-full transition-all duration-200"
               >
                 <FaFacebook size={24} />
               </a>
@@ -161,7 +161,7 @@ const Header = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-psych-blue transition-colors duration-200"
+                className="p-2 hover:text-psych-blue hover:bg-psych-blue-light rounded-full transition-all duration-200"
               >
                 <FaTwitter size={24} />
               </a>
@@ -169,7 +169,7 @@ const Header = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-psych-blue transition-colors duration-200"
+                className="p-2 hover:text-psych-blue hover:bg-psych-blue-light rounded-full transition-all duration-200"
               >
                 <FaLinkedin size={24} />
               </a>
@@ -177,7 +177,7 @@ const Header = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-psych-blue transition-colors duration-200"
+                className="p-2 hover:text-psych-blue hover:bg-psych-blue-light rounded-full transition-all duration-200"
               >
                 <FaInstagram size={24} />
               </a>
